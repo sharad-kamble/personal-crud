@@ -73,7 +73,6 @@
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <script>
     function validateForm() {
         let username = document.getElementById('username').value;
@@ -121,6 +120,24 @@
         // Validate message length (at least 10 characters)
         if (message.length < 10) {
             alert("Message must be at least 10 characters long.");
+            return false;
+        }
+
+        // Validate subject (at least 3 characters)
+        if (subject.length < 3) {
+            alert("Subject must be at least 3 characters long.");
+            return false;
+        }
+
+        // Validate company (at least 2 characters)
+        if (company.length < 2) {
+            alert("Company name must be at least 2 characters long.");
+            return false;
+        }
+
+        // Validate name (at least 3 characters)
+        if (name.length < 3) {
+            alert("Name must be at least 3 characters long.");
             return false;
         }
 
