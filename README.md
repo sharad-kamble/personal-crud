@@ -1,3 +1,3 @@
 # personal-crud
 
-https://chatgptapp-nine.vercel.app/
+https://talkai.info/chat/
